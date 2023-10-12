@@ -1,0 +1,14 @@
+body{
+    margin: 0 auto;
+    width: 834px;
+    background-color: #020659;
+}
+#trending{
+    background-color: #fff;
+}
+#playlists{
+    background-color: #0D8DFB;
+}
+#curated{
+    background-color: #020873;
+}
