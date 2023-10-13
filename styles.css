@@ -2,13 +2,36 @@ body{
     margin: 0 auto;
     width: 834px;
     background-color: #020659;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
-#trending{
+main{
     background-color: #fff;
 }
 #playlists{
+    background-color: #2699FB;
+}
+#playlists section{
     background-color: #0D8DFB;
 }
 #curated{
     background-color: #020873;
+}
+#curated section{
+    background-color: #020873;
+}
+footer{
+    background-color: #fff;
+}
+h1 {
+    font-size:1.25em;
+}
+h2, h3 {
+    font-size: 1em;
+}
+p, dl, dd {
+    font-size: 1em;
+}
+footer p {
+    font-size: .75em;
 }
