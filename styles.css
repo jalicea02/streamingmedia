@@ -1,12 +1,24 @@
 body{
     margin: 0 auto;
-    width: 834px;
     background-color: #020659;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    display: grid;
+    width: 375px;
 }
 main{
     background-color: #fff;
+}
+header, nav{
+    background-color: #030ABC;
+}
+header{
+    grid-row: 2/3;
+}
+nav{
+    grid-row: 1/2;
+}
+nav li{
+    list-style: none;
 }
 #playlists{
     background-color: #2699FB;
@@ -18,7 +30,7 @@ main{
     background-color: #020873;
 }
 #curated section{
-    background-color: #020873;
+    background-color: #020659;
 }
 footer{
     background-color: #fff;
@@ -34,4 +46,9 @@ p, dl, dd {
 }
 footer p {
     font-size: .75em;
+}
+section a{
+    background-color: #590242;
+    color: #fff;
+    text-decoration: none;
 }
