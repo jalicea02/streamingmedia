@@ -12,129 +12,142 @@
         <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
     </header>
     <nav>
-        <h2>Main Navigation</h2>
+        <h2>Menu</h2>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul>
-            <li><a href="#">MuzakMaker</a></li>
-            <li><a href="#">Trending Songs</a></li>
-            <li><a href="#">Your playlists</a></li>
-            <li><a href="#">Curated Playlists</a></li>
+            <li><a href="#home">MuzakMaker</a></li>
+            <li><a href="#trending">Trending Songs</a></li>
+            <li><a href="#playlists">Your playlists</a></li>
+            <li><a href="#curated">Curated Playlists</a></li>
+            <li><a href="#user"><img src="images/duke-silver.png" alt="Image of a mustached man wearing a trilby smoking a cigar"></a></li>
         </ul>
-        <img src="images/duke-silver.png" alt="Image of a mustached man wearing a trilby smoking a cigar">
+        
     </nav>
     <main>
         <section id="trending">
             <h2>Trending Songs</h2>
-            <section>
-                <h3>Aloma</h3>
-                <dl>
-                    <dt>Artist</dt>
-                    <dd>Cali</dd>
-                </dl>
-                <img src="images/aloma-cover.png" alt="">
-                <figure>
-                    <audio controls src="audio/aloma.mp3">
-                    <a href="audio/aloma.mp3"> Download audio </a>
-                    </audio>
-                </figure>
-            </section>
+            <div class="scroll">
+                <section>
+                    <div>
+                        <h3>Aloma</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Cali</dd>
+                        </dl>
+                    </div>
+                    <img src="images/aloma-cover.png" alt="">
+                    <figure>
+                        <audio controls src="audio/aloma.mp3">
+                        <a href="audio/aloma.mp3"> Download audio </a>
+                        </audio>
+                    </figure>
+                </section>
 
-            <section>
-                <h3>My Road</h3>
-                <dl>
-                    <dt>Artist</dt>
-                    <dd>Nesterouk</dd>
-                </dl>
-                <img src="images/my-road-cover.png" alt="">
-                <figure>
-                    <audio controls src="audio/my-road.mp3">
-                    <a href="audio/my-road.mp3"> Download audio </a>
-                    </audio>
-                </figure>
-            </section>
-        
-            <section>
-                <h3>Papaya</h3>
-                <dl>
-                    <dt>Artist</dt>
-                    <dd>Dredstudio</dd>
-                </dl>
-                <img src="images/papaya-cover.png" alt="">
-                <figure>
-                    <audio controls src="audio/papaya.mp3">
-                    <a href="audio/papaya.mp3"> Download audio </a>
-                    </audio>
-                </figure>
-            </section>
-        
-            <section>
-                <h3>Smoothies</h3>
-                <dl>
-                    <dt>Artist</dt>
-                    <dd>Black Rhomb</dd>
-                </dl>
-                <img src="images/smoothies-cover.png" alt="">
-                <figure>
-                    <audio controls src="audio/smoothies.mp3">
-                    <a href="audio/smoothies.mp3"> Download audio </a>
-                    </audio>
-                </figure>
-            </section>
-        
-            <section>
-                <h3>Successful Performance</h3>
-                <dl>
-                    <dt>Artist</dt>
-                    <dd>Ricky Bombino</dd>
-                </dl>
-                <img src="images/successful-performance-cover.png" alt="">
-                <figure>
-                    <audio controls src="audio/successful-performance.mp3">
-                    <a href="audio/successful-performance.mp3"> Download audio </a>
-                    </audio>
-                </figure>
-            </section>
-
-            <div>
+                <section>
+                    <div>
+                        <h3>My Road</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Nesterouk</dd>
+                        </dl>
+                    </div>
+                    <img src="images/my-road-cover.png" alt="">
+                    <figure>
+                        <audio controls src="audio/my-road.mp3">
+                        <a href="audio/my-road.mp3"> Download audio </a>
+                        </audio>
+                    </figure>
+                </section>
+            
+                <section>
+                    <div>
+                        <h3>Papaya</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Dredstudio</dd>
+                        </dl>
+                    </div>
+                    <img src="images/papaya-cover.png" alt="">
+                    <figure>
+                        <audio controls src="audio/papaya.mp3">
+                        <a href="audio/papaya.mp3"> Download audio </a>
+                        </audio>
+                    </figure>
+                </section>
+            
+                <section>
+                    <div>
+                        <h3>Smoothies</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Black Rhomb</dd>
+                        </dl>
+                    </div>
+                    <img src="images/smoothies-cover.png" alt="">
+                    <figure>
+                        <audio controls src="audio/smoothies.mp3">
+                        <a href="audio/smoothies.mp3"> Download audio </a>
+                        </audio>
+                    </figure>
+                </section>
+            
+                <section>
+                    <div>
+                        <h3>Successful Performance</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Ricky Bombino</dd>
+                        </dl>
+                    </div>
+                    <img src="images/successful-performance-cover.png" alt="">
+                    <figure>
+                        <audio controls src="audio/successful-performance.mp3">
+                        <a href="audio/successful-performance.mp3"> Download audio </a>
+                        </audio>
+                    </figure>
+                </section>
+            </div>
+            <div class="more">
                 <a href="#">More trending</a>
             </div>
         </section>
 
         <section id="playlists">
             <h2>Your Playlists</h2>
-            <section>
-                <img src="images/best-of-2020-cover.png" alt="">
-                <h3>Best of 2020</h3>
-                <p>The music that got you through the lock down.</p>
-            </section>
-        
-            <section>
-                <img src="images/pumpkin-spice-cover.png" alt="">
-                <h3>Pumpkin Spice</h3>
-                <p>Creamy and spicy, just like your favorite autumnal latte.</p>
-            </section>
-        
-            <section>
-                <img src="images/quiet-storm-cover.png" alt="">
-                <h3>Quiet Storm</h3>
-                <p>Slow tempos and relaxed rhythms.</p>
-            </section> 
-        
-            <section>
-                <img src="images/smooth-jazz-cover.png" alt="">
-                <h3>Smooth Jazz</h3>
-                <p>The pioneers of smooth jazz</p>
-            </section>
-        
-            <section>
-                <img src="images/smooth-study-cover.png" alt="">
-                <h3>Smooth Study</h3>
-                <p>Background music to keep you going while you study.</p>
-            </section>
-        
-            <div>
-                <a href="#">All your playlists</a>
-            </div>
+                <section>
+                    <img src="images/best-of-2020-cover.png" alt="">
+                    <h3>Best of 2020</h3>
+                    <p>The music that got you through the lock down.</p>
+                </section>
+            
+                <section>
+                    <img src="images/pumpkin-spice-cover.png" alt="">
+                    <h3>Pumpkin Spice</h3>
+                    <p>Creamy and spicy, just like your favorite autumnal latte.</p>
+                </section>
+            
+                <section>
+                    <img src="images/quiet-storm-cover.png" alt="">
+                    <h3>Quiet Storm</h3>
+                    <p>Slow tempos and relaxed rhythms.</p>
+                </section> 
+            
+                <section>
+                    <img src="images/smooth-jazz-cover.png" alt="">
+                    <h3>Smooth Jazz</h3>
+                    <p>The pioneers of smooth jazz</p>
+                </section>
+            
+                <section>
+                    <img src="images/smooth-study-cover.png" alt="">
+                    <h3>Smooth Study</h3>
+                    <p>Background music to keep you going while you study.</p>
+                </section>
         </section>
+        <div class="more">
+            <a href="#">All your playlists</a>
+        </div>
 
         <section id="curated">
             <h2>Curated Playlists</h2>
@@ -167,11 +180,10 @@
                 <h3>Jazz Saxophone</h3>
                 <p>The greatest collection of your sax favorites.</p>
             </section>
-        
-            <div>
-                <a href="#">More curated</a>
-            </div>
         </section>
+        <div class="more">
+            <a href="#">More curated</a>
+        </div>
     </main>
     <footer>
         <small>Copyright 2022 Smooth Jazz</small>
