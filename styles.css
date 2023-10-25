@@ -11,10 +11,13 @@ header,nav, main, footer{
 }
 
 header{
+    background-image: linear-gradient(to right, #030A8C , #000);
     grid-row: 2/3;
     color: #fff;
 }
-
+header div{
+    padding: 10px 30px;
+}
 nav{
     grid-row: 1/2;
     background-color: #030A8C;
@@ -48,19 +51,41 @@ footer{
     margin: 0 auto;
     padding: 25px 0;
 }
-footer p {
-    text-align: center;
+footer small {
     font-size: .75em;
     color: #590242;
+    padding: 10px;
+    margin: 0 85px;
 }
-#playlists{
+
+main h2{
+    color: #590242;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0 0 32px;
+}
+
+#playlists div, #curated div{
     background-color: #2699FB;
     color: #fff;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    padding: 10px; 
 }
-#playlists section{
+#overflow h3{
+    text-transform: uppercase;
+}
+#overflow section {
+    text-align: center;
     background-color: #0D8DFB;
+    padding: 10px;
+    margin: 10px;
 }
-#curated{
+
+#curated div{
     background-color: #030A8C;
     color: #fff;
 }
@@ -68,7 +93,7 @@ footer p {
     background-color: #020873;
 }
 
-/*Scroll*/
+/*Scroll for trending songs*/
 .scroll{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -77,17 +102,26 @@ footer p {
 }
 
 .scroll section{
-    margin: 10px;
+    margin: 5px;
     position: relative;
+    color: #590242;
+    background-color: #bbbbbb;
+}
+.scroll h3{
+    text-transform: uppercase;
+}
+
+section div{
+    padding: 5px;
 }
 
 .scroll div{
+    background-color: #bbbbbb;
     position: absolute;
     top: 251px;
-    background-color: #fff;
     padding: 5px;
     height: 50px;
-    width: 350px;
+    width: 301px;
 }
 
 dl{
@@ -102,8 +136,20 @@ audio{
     bottom: 150px;
     left: 5px;
 }
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #fff;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-play-button {
+    background-color: #fff;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-enclosure {
+    background-color: #ffffff96;
+
+}
 .more{
-    
     background-color: #590242;
     border-radius: 5px;
     padding: 10px;
@@ -151,6 +197,7 @@ li a{
     display: block;
     padding: 20px 20px;
     text-decoration: none;
+    text-transform: uppercase;
     color: #fff;
 }
 
@@ -159,10 +206,9 @@ li a{
     font-variant: small-caps;
     font-weight: bold;
     font-size: 30px;
-    padding: 16px 16px;
     position: absolute;
-    top: 0px;
-    left: 90px;
+    top: 25px;
+    left: 125px;
     z-index: 1;
 }
 
@@ -224,7 +270,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 /*
 @media screen and (min-width:834px) {
-    body{
+    header, nav, main, footer{
         margin: 0 auto;
         width: 834px;
     }
