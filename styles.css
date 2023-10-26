@@ -66,9 +66,9 @@ main h2{
     margin: 10px 0 0 32px;
 }
 
-#playlists div, #curated div{
-    background-color: #2699FB;
+#playlists .overflow, #curated .overflow{
     color: #fff;
+    text-align: center;
     overflow-x:scroll;
     overflow-y: hidden;
     display:grid;
@@ -78,19 +78,24 @@ main h2{
 #overflow h3{
     text-transform: uppercase;
 }
-#overflow section {
+#playlists .overflow{
+    background-color: #2699FB;
+}
+#playlists section {
     text-align: center;
     background-color: #0D8DFB;
     padding: 10px;
     margin: 10px;
 }
 
-#curated div{
+#curated .overflow{
     background-color: #030A8C;
     color: #fff;
 }
 #curated section{
     background-color: #020873;
+    padding: 10px;
+    margin: 10px;
 }
 
 /*Scroll for trending songs*/
@@ -200,6 +205,9 @@ li a{
     text-transform: uppercase;
     color: #fff;
 }
+li a:hover{
+    background-color: #590242;
+}
 
 [href="#home"]{
     text-transform: capitalize;
@@ -207,8 +215,7 @@ li a{
     font-weight: bold;
     font-size: 30px;
     position: absolute;
-    top: 25px;
-    left: 125px;
+    top: 15px;
     z-index: 1;
 }
 
@@ -268,21 +275,64 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 
-/*
+
 @media screen and (min-width:834px) {
     header, nav, main, footer{
         margin: 0 auto;
         width: 834px;
     }
     ul {
+        text-align: center;
         overflow: visible;
         position: absolute;
-        top: 0;
+        top: -10px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        max-width: 834px;
     }
     label span, input {
         display: none;
     }
+    [href="#home"]{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding: 10px;
+    }
+    #lists{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #playlists .overflow, #curated .overflow{
+        display:grid;
+        grid-template-columns: 1fr;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 400px;
+        height: 550px;
+    }
+    .overflow section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .more{
+        position: relative;
+        left: 620px;
+    }
+    #lists .more{
+        position: relative;
+        left: 200px;
+    }
+    footer{
+        margin: 0 auto;
+        padding: 25px 0;
+    }
+    footer small {
+        font-size: .75em;
+        color: #590242;
+        padding: 10px;
+        margin: 0 320px;
+    }
+    
 }
-*/
